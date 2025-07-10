@@ -1,0 +1,181 @@
+/* Reset default browser styles and set base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes width/height calculations easier */
+}
+
+body {
+    font-family: Georgia, serif; /* Classic serif font for restaurant feel */
+    line-height: 1.6; /* Better readability */
+    color: #333; /* Dark gray text */
+    background-color: #f8f8f8; /* Light gray background */
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #2c3e50; /* Dark blue-gray background */
+    color: white;
+    padding: 1rem 0; /* 1rem = 16px typically */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Arrange items horizontally */
+    justify-content: center; /* Center the buttons */
+    gap: 2rem; /* Space between buttons */
+}
+
+nav button {
+    background-color: transparent; /* No background initially */
+    border: 2px solid white; /* White border */
+    color: white;
+    padding: 0.5rem 1.5rem; /* Vertical and horizontal padding */
+    font-size: 1rem;
+    cursor: pointer; /* Shows hand cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+nav button:hover {
+    background-color: white; /* White background on hover */
+    color: #2c3e50; /* Dark text on hover */
+}
+
+/* Main Content Area */
+#content {
+    max-width: 1200px; /* Limit width on large screens */
+    margin: 2rem auto; /* Center the content */
+    padding: 0 1rem; /* Side padding */
+}
+
+/* Homepage Styles */
+.homepage {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.homepage h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.homepage p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #555; /* Slightly lighter text */
+}
+
+.homepage img {
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for image */
+}
+
+/* Menu Page Styles */
+.menu-page {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.menu-page h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.menu-section {
+    margin-bottom: 3rem; /* Space between sections */
+}
+
+.menu-section h2 {
+    color: #34495e;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db; /* Blue underline */
+    padding-bottom: 0.5rem;
+}
+
+.menu-item {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border-left: 4px solid #3498db; /* Blue left border */
+}
+
+.menu-item h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item .price {
+    color: #e74c3c; /* Red color for price */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* About Page Styles */
+.about-page {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.about-page h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.story, .contact-info, .chef-info {
+    margin-bottom: 2rem; /* Space between sections */
+}
+
+.about-page h2 {
+    color: #34495e;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.about-page p {
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.7; /* Better readability */
+}
+
+/* Responsive Design - Makes it look good on mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .homepage h1,
+    .menu-page h1,
+    .about-page h1 {
+        font-size: 2rem; /* Smaller text on mobile */
+    }
+    
+    #content {
+        margin: 1rem auto;
+        padding: 0 0.5rem;
+    }
+}
